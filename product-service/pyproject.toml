@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "user-service"
+version = "0.0.1"
+description = "User Service"
+authors = ["cfowlerdev <cfowlerdev@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+fastapi = "^0.109.2"
+uvicorn = "^0.27.1"
+opensearch-py = {version = "^2.4.2",  extras = ["async"]}
+pydantic = "^2.6.2"
+pydantic-settings = "^2.2.1"
+opensearch-dsl = "^2.1.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
